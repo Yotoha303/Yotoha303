@@ -1,0 +1,13 @@
+{
+  "name": "@my-app/contracts",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "ethers": "^6.12.1",
+    "hardhat": "^2.22.4"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0"
+  }
+}
