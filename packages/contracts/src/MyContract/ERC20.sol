@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 // WTF Solidity by 0xAA
 
-pragma solidity ^0.8.21;
-
 import "./IERC20.sol";
+
+pragma solidity ^0.8.21;
 
 contract ERC20 is IERC20 {
     mapping(address => uint256) public override balanceOf;
@@ -19,7 +19,7 @@ contract ERC20 is IERC20 {
     uint public decimals = 18; //小位数
 
     //部署合约的时候实现合约名称和符号
-    constructor(string memory name_,string memory symbol_){
+    constructor(string memory name_, string memory symbol_) {
         name = name_;
         symbol = symbol_;
     }

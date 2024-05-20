@@ -28,6 +28,7 @@
     "hardhat": "^2.22.4"
   },
   "dependencies": {
+    "solc": "^0.8.25",
     "styled-components": "^6.1.11"
   }
 }
