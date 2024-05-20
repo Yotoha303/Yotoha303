@@ -3,7 +3,7 @@ import { Contract } from "@ethersproject/contracts";
 import { shortenAddress, useCall, useEthers, useLookupAddress } from "@usedapp/core";
 import React, { useEffect, useState } from "react";
 
-import { Body, Button, Container, Header, Image, Link ,LeftDiv } from "./components";
+import { Body, Button, Container, Header, Image, Link, LeftDiv, Footer } from "./components";
 import logo from "./ethereumLogo.png";
 import Mylogo from "./MyOnline.png";
 
@@ -48,8 +48,8 @@ function WalletButton() {
   );
 }
 
-function LeftLink(){
-  return(
+function LeftLink() {
+  return (
     <LeftDiv>
       <a href="#">主页</a>
       <a href="#">交易</a>
@@ -57,6 +57,27 @@ function LeftLink(){
       <a href="#">...</a>
     </LeftDiv>
   );
+}
+
+function FooterContents() {
+  return (
+    <div>
+      <div class="column">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+      </div>
+      <div class="column">
+        <a href="#">6</a>
+        <a href="#">7</a>
+        <a href="#">8</a>
+        <a href="#">9</a>
+        <a href="#">10</a>
+      </div>
+    </div>
+  )
 }
 
 function App() {
@@ -83,7 +104,7 @@ function App() {
   return (
     <Container>
       <Header>
-        <LeftLink/>
+        <LeftLink />
         <WalletButton />
       </Header>
       <Body>
@@ -99,6 +120,9 @@ function App() {
         <p>Welcome to my project!</p>
         <p>I look forward to developing with you in this field</p>
       </Body>
+      <Footer>
+        <FooterContents/>
+      </Footer>
     </Container>
   );
 }

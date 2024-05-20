@@ -46,6 +46,13 @@ export const Header = styled.header`
   border-color: #E6E3EA;
 `;
 
+export const Footer = styled.footer`
+  background-color: grey;
+  width: 100%;
+  height: 10rem;
+  // margin-top: 3rem;
+`
+
 export const Image = styled.img`
   height: 40vmin;
   margin-bottom: 16px;
@@ -62,16 +69,17 @@ export const Link = styled.a.attrs({
 
 export const LeftDiv = styled.div`
   position: absolute;
-  left: 2rem;
+  left: 3rem;
 
   a{
     color: black;
     text-decoration:none;
-    margin-right: 1rem;
+    margin-right: 3.2rem;
 
     &:hover{
-      color:white;
-      background-color:red;
+      color: blue;
+      border-bottom-style: soild;
+      // background-color:red;
     }
   }
 
