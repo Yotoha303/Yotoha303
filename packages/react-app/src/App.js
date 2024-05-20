@@ -3,7 +3,7 @@ import { Contract } from "@ethersproject/contracts";
 import { shortenAddress, useCall, useEthers, useLookupAddress } from "@usedapp/core";
 import React, { useEffect, useState } from "react";
 
-import { Body, Button, Container, Header, Image, Link, LeftDiv, Footer } from "./components";
+import { Body, Button, Container, Header, Image, Link, LeftDiv, Footer, BodyContent } from "./components";
 import logo from "./ethereumLogo.png";
 import Mylogo from "./MyOnline.png";
 
@@ -62,20 +62,7 @@ function LeftLink() {
 function FooterContents() {
   return (
     <div>
-      <div class="column">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-      </div>
-      <div class="column">
-        <a href="#">6</a>
-        <a href="#">7</a>
-        <a href="#">8</a>
-        <a href="#">9</a>
-        <a href="#">10</a>
-      </div>
+      testFooter
     </div>
   )
 }
@@ -103,25 +90,20 @@ function App() {
 
   return (
     <Container>
+      {/* <GlobalStyle/> */}
       <Header>
         <LeftLink />
         <WalletButton />
       </Header>
       <Body>
-        <Image src={Mylogo} alt="Mylogo-logo" />
-        {/* <p>
-          Edit <code>packages/react-app/src/App.js</code> and save to reload.
-        </p>
-        <Link href="https://reactjs.org">
-          Learn React
-        </Link>
-        <Link href="https://usedapp.io/">Learn useDapp</Link>
-        <Link href="https://thegraph.com/docs/quick-start">Learn The Graph</Link> */}
-        <p>Welcome to my project!</p>
-        <p>I look forward to developing with you in this field</p>
+        <BodyContent>
+          <Image src={Mylogo} alt="Mylogo-logo" />
+          <p>Welcome to my project!</p>
+          <p>I look forward to developing with you in this field</p>
+        </BodyContent>
       </Body>
       <Footer>
-        <FooterContents/>
+        <FooterContents />
       </Footer>
     </Container>
   );

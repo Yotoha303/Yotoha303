@@ -7,7 +7,14 @@ export const Body = styled.div`
   flex-direction: column;
   font-size: calc(10px + 2vmin);
   justify-content: center;
-  margin-top: 40px;
+  // margin-top: 7rem;
+  height:100%;
+  // border-style: solid;
+`;
+
+export const BodyContent = styled.div`
+  // border-style: solid;
+  margin: 8rem;
 `;
 
 export const Button = styled.button`
@@ -31,6 +38,11 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   height: calc(100vh);
+  
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;  
 `;
 
 export const Header = styled.header`
@@ -44,13 +56,18 @@ export const Header = styled.header`
   min-height: 50px;
   border-style: solid;
   border-color: #E6E3EA;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%
 `;
 
 export const Footer = styled.footer`
   background-color: grey;
   width: 100%;
-  height: 10rem;
-  // margin-top: 3rem;
+  height: 20rem;
+  // margin-top: 10rem;
 `
 
 export const Image = styled.img`

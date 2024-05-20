@@ -26,5 +26,8 @@
   },
   "devDependencies": {
     "hardhat": "^2.22.4"
+  },
+  "dependencies": {
+    "styled-components": "^6.1.11"
   }
 }
